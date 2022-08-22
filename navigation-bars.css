@@ -1,0 +1,22 @@
+/*****COVID19********/
+#COVIDbanner .infographicItem {
+    padding: 0 !important;
+}
+@media screen and (min-width:768px) {
+#COVIDbanner .infographicItem {
+    padding: 0 !important;
+}
+}
+#COVIDbanner .infographicItemHeader a {
+  color:#fff;
+  font-size: 18px;
+  text-decoration:underline;
+}
+#COVIDbanner .infographicItemHeader a:focus, #COVIDbanner .infographicItemHeader a:hover {
+  color:#000;
+}
+#COVIDbanner .infographicItemText p {
+    line-height: 1;
+    font-size: 18px;
+    padding: 0;
+}
