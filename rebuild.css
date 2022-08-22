@@ -3,13 +3,8 @@
    Media Library ID: ?
 ************************************************************ */
 
-@-webkit-viewport {
-    width: device-width;
-}
 
-@-moz-viewport {
-    width: device-width;
-}
+
 
 @-ms-viewport {
     width: device-width;
@@ -61,7 +56,6 @@
     font-weight: normal !important;
     font-variant: normal !important;
     text-transform: none !important;
-    speak: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -71,12 +65,11 @@ body {
     background-color: #ffffff;
     color: #333333;
     font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    /* base font size, because multiplying by 10 is easy */
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.25;
     margin: 0;
-    padding-top: 130px;
+    /* padding-top: 130px; */
     /* for the fixed header */
 }
 
