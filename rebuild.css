@@ -620,6 +620,14 @@ body #googleSearchBox input#gsc-i-id1:focus {
     }
 }
 
+#globalHeaderMiddleInner {
+    border-top: 2px solid var(--navy-blue);
+}
+
+#globalHeaderBottomInner {
+    border-top: 2px solid var(--navy-blue);
+}
+
 
 /******** modal fullscreen dropdown menu ********/
 
