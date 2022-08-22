@@ -33,6 +33,10 @@ html, body {
     height:65px;
 }
 
+#pageContentWrapper {
+    padding-top: 2rem;
+}
+
 
 /* Font and icon declarations */
 
