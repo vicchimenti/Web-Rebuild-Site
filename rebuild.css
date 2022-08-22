@@ -94,7 +94,7 @@ body {
 }
 
 :root {
-    --p: 1.2rem;
+    --p: 1.25rem;
     --cap: 1.1rem;
     --h1: 3rem;
     --h2: 2.75rem;
@@ -115,4 +115,8 @@ body {
     --su-white: #fff;
     --su-yellow: #fdb913;
     --su-yellow-tint: #f7f7f7;
+}
+
+span {
+    font-size: var(--p);
 }
