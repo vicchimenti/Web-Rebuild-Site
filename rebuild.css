@@ -341,9 +341,9 @@ span {
 }
 
 #googleSearchBox input#gsc-i-id1 {
-    background: #881111 !important;
-    border: 1px solid #881111;
-    color: #ffffff;
+    background: var(--navy-blue) !important;
+    border: 1px solid var(--navy-blue);
+    color: #fff;
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
@@ -355,29 +355,29 @@ span {
 }
 
 body #googleSearchBox input#gsc-i-id1:focus {
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
 }
 
 ::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #fff;
 }
 
 ::-moz-placeholder {
-    color: #ffffff;
+    color: #fff;
 }
 
 :-ms-input-placeholder {
-    color: #ffffff;
+    color: #fff;
 }
 
 :-moz-placeholder {
-    color: #ffffff;
+    color: #fff;
 }
 
 #googleSearchBox button.gsc-search-button {
-    background: #881111;
+    background: var(--navy-blue);
     border: none;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
