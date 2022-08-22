@@ -417,7 +417,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 #globalHeaderResourcesLinks li a,
 #globalHeaderResourcesLinks li span {
-    color: var(--su-black);
+    color: var(--navy-blue);
     cursor: pointer;
     text-decoration: none;
 }
