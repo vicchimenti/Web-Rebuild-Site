@@ -172,7 +172,7 @@ span {
 
 
 #globalHeader {
-    background: #003282;
+    background: var(--su-white);
     padding: 0;
     position: fixed;
     top: 0;
@@ -417,7 +417,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 #globalHeaderResourcesLinks li a,
 #globalHeaderResourcesLinks li span {
-    color: #ffffff;
+    color: var(--su-black);
     cursor: pointer;
     text-decoration: none;
 }
