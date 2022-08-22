@@ -62,7 +62,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #333333;
     font-family: "Montserrat", sans-serif;
     font-size: 1.25rem;
@@ -85,9 +85,9 @@ body {
     /* lg */
     #pageContentWrapper[class=""] {
         /* Default state in .container or .container-fluid are not set in the site configuration */
-        width: 1170px;
-        padding-right: 15px;
-        padding-left: 15px;
+        width: 1400px;
+        padding-right: 2rem;
+        padding-left: 2rem;
         margin-right: auto;
         margin-left: auto;
     }
