@@ -24,6 +24,15 @@ html, body {
     overflow-x: hidden;
 }
 
+#globalHeader {
+    background-color: #fff;
+    border: 3px solid #003282;
+}
+
+#mainlogo img {
+    height:65px;
+}
+
 
 /* Font and icon declarations */
 
