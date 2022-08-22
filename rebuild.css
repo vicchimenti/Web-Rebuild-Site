@@ -127,6 +127,26 @@ span {
     font-size: var(--p);
 }
 
+.contentItem {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.standardContent p {
+    max-width: 1400px;
+}
+
+.standardContent span {
+    max-width: 1400px;
+}
+
+.standardContent img {
+    max-width: 1400px;
+}
+
+
+
 
 /***
 *   rebuild.css
