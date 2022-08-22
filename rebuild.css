@@ -163,6 +163,635 @@ span {
 
 
 /***
+*   header
+*   
+*
+* */
+
+
+
+
+#globalHeader {
+    background: #aa0000;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    /*c*/
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-up {
+    top: -131px;
+}
+
+#globalHeader.is-visible {
+    top: 0px;
+}
+
+#globalHeader.not-visible {
+    top: -131px;
+}
+
+#globalHeader #mainlogo {
+    float: left;
+    height: 65px;
+    padding: 19px 30px;
+}
+
+#globalHeader #mainlogo a {
+    display: block;
+    height: 27px;
+    width: 117px;
+}
+
+#globalHeader #mainlogo img {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    height: 27px;
+    text-align: left;
+}
+
+#globalHeader #mainlogo a:focus:after {
+    content: 'Link to SU Home Page';
+    position: absolute;
+    color: #ffffff;
+    bottom: 0;
+}
+
+
+/*ncs logo*/
+
+#globalHeader #NCSmainlogo {
+    float: left;
+    height: 65px;
+    padding: 10px 30px;
+}
+
+#globalHeader #NCSmainlogo a {
+    display: block;
+    height: 45px;
+    width: 141px;
+}
+
+#globalHeader #NCSmainlogo img {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    height: 45px;
+    text-align: left;
+}
+
+#globalHeader #NCSmainlogo a:focus:after {
+    content: 'Link to SU NCS Home Page';
+    position: absolute;
+    color: #ffffff;
+    bottom: 0;
+}
+
+
+/*end ncs logo*/
+
+#globalHeader .navbar-toggle {
+    margin: 15px 20px 8px 10px;
+    padding: 17px 18px;
+    z-index: 101;
+}
+
+#globalHeader .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#globalHeader .navbar-toggler:active {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon::before {
+    font-family: FontAwesome;
+    content: "\f0c9";
+}
+
+#globalHeader .navbar-toggler-icon {
+    background-image: none;
+    color: #f7f7f7;
+    font-size: 1.5rem;
+}
+
+
+/* #globalHeader .navbar-toggle .icon-bar {
+    background: #ffffff;
+} */
+
+#globalHeaderResourcesWrapper {
+    font-size: 13px;
+    font-weight: 700;
+    overflow-y: visible;
+    padding: 0;
+}
+
+#globalHeaderResources {
+    overflow: visible;
+    padding: 0 30px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* #globalHeaderBottomInner {
+    background-color: #ffffff;
+    height: 66px;
+} */
+
+@media (min-width: 992px) {
+    #globalHeaderTopInner button.navbar-toggler {
+        display: none;
+    }
+    #globalHeaderResources {
+        display: contents;
+    }
+    #globalHeaderNavigationWrapper {
+        display: contents;
+    }
+}
+
+@media (max-width:434px) {
+    #headerResourcesMenu {
+        padding: 10px 0;
+        display: inline-block;
+        margin: 10px 0 0;
+    }
+}
+
+
+/* search box */
+
+#googleSearchBox {
+    padding: 14px 0;
+}
+
+#googleSearchBox td.gsc-input {
+    width: 100%;
+    padding-right: 0;
+}
+
+#googleSearchBox .gsc-search-button {
+    padding: 1px 0;
+}
+
+#googleSearchBox input#gsc-i-id1 {
+    background: #881111 !important;
+    border: 1px solid #881111;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 36px;
+    letter-spacing: .2px;
+    line-height: 4rem;
+    padding: 0 15px;
+    width: 100%
+}
+
+body #googleSearchBox input#gsc-i-id1:focus {
+    border: 1px solid #ffffff;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+:-moz-placeholder {
+    color: #ffffff;
+}
+
+#googleSearchBox button.gsc-search-button {
+    background: #881111;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 36px;
+    line-height: 1;
+    padding: 0px 12px;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+#googleSearchBox .gsc-clear-button {
+    display: none;
+}
+
+#googleSearchBox .gsc-search-button:hover,
+#googleSearchBox .gsc-search-button:focus {
+    color: #fdb913;
+}
+
+
+/* links in red bar */
+
+#globalHeaderResourcesLinks {
+    margin: 0;
+    padding: 22px 0;
+    text-align: right;
+}
+
+#globalHeaderResourcesLinks li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+#globalHeaderResourcesLinks li a,
+#globalHeaderResourcesLinks li span {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#globalHeaderResourcesLinks li a:hover,
+#globalHeaderResourcesLinks li a:focus,
+#globalHeaderResourcesLinks li span:hover,
+#globalHeaderResourcesLinks li span:focus {
+    text-decoration: underline;
+}
+
+@media (max-width:991.999px) {
+    #globalHeaderResources {
+        padding: 0 30px;
+    }
+    #googleSearchBox {
+        padding: 0;
+    }
+    #globalHeaderResourcesLinks {
+        margin: 0 0 0 -10px;
+        text-align: left;
+        padding: 8px 0 25px;
+    }
+}
+
+@media (max-width: 767.999px) {
+    #globalHeaderResourcesLinks {
+        margin: 0 0 0 -10px;
+        text-align: left;
+        padding: 20px 0 25px;
+    }
+}
+
+
+/* SU Resources menu */
+
+#globalHeaderResources .dropdown-menu {
+    margin: 0;
+}
+
+#globalHeaderResources .dropdown-menu li {
+    margin: 0;
+    width: 100%;
+}
+
+#globalHeaderResources .dropdown-menu>li>a {
+    color: #333333;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.5;
+    padding: 12px 15px;
+    -webkit-backface-visibility: hidden;
+}
+
+
+/*navigation in white bar */
+
+#globalHeaderNavigationWrapper {
+    background-color: #ffffff;
+    border: 0;
+    clear: both;
+    height: 66px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* #globalHeaderBottomInner {
+    background-color: #ffffff;
+    height: 66px;
+} */
+
+#globalHeaderNavigation {
+    -webkit-backface-visibility: hidden;
+    /*stops the flickering. Maybe. */
+    background: #ffffff;
+    margin: 0;
+    padding: 0 0 0 5px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+@media (max-width:1169.999px) {
+    #globalHeaderNavigation {
+        padding: 0 0 0 10px;
+    }
+}
+
+@media (max-width:991.999px) {
+    #globalHeaderNavigation {
+        padding: 0;
+    }
+}
+
+#globalHeaderNavigation li.dropdown {
+    line-height: 1;
+    margin: 0;
+    padding: 25px 0;
+}
+
+@media screen and (max-width:991.98px) {
+
+    #globalHeaderNavigation li.dropdown {
+
+        padding: 17px 0;
+    }
+}
+
+#globalHeaderNavigation li.dropdown a {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+#globalHeaderNavigation li.dropdown a:hover {
+    text-decoration: underline;
+}
+
+#globalHeaderNavigation li.dropdown a:focus {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1199.98px) {
+    #globalHeaderNavigation li.dropdown a {
+        font-size: 15px;
+        padding: 18px;
+    }
+}
+
+
+/* @media screen and (max-width: 1000px) {
+    #globalHeaderNavigation li.dropdown a {
+        font-size: 1.5rem;
+        padding: 25px 18px;
+    }
+} */
+
+@media screen and (max-width:991.98px) {
+    #globalHeaderNavigation li.dropdown a {
+
+        padding: 0 30px;
+    }
+}
+
+#globalHeaderNavigation li a.dropdown-toggle {
+    background: #ffffff;
+}
+
+#globalHeaderNavigation li a.dropdown-toggle:focus {
+    color: #000000;
+    text-decoration: underline;
+}
+
+#globalHeaderNavigation li a.dropdown-toggle:after {
+    display: none;
+}
+
+#globalHeaderNavigation li:hover a.dropdown-toggle,
+#globalHeaderNavigation li:focus a.dropdown-toggle {
+    background-color: transparent;
+    color: #000000;
+}
+
+#globalHeaderNavigation li:hover>a.dropdown-toggle:after,
+#globalHeaderNavigation li:focus>a.dropdown-toggle:after {
+    /* yellow triangle */
+    border-color: transparent transparent #fdb913 transparent;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    bottom: 0;
+    content: '';
+    height: 0;
+    left: calc(5% - 50px);
+    position: absolute;
+    width: 0;
+    margin: 0;
+    vertical-align: unset;
+}
+
+@media (max-width:991.999px) {
+    #globalHeaderNavigationWrapper li:hover>a.dropdown-toggle,
+    #globalHeaderNavigationWrapper li:focus>a.dropdown-toggle {
+        color: #aa0000;
+    }
+    #globalHeaderNavigationWrapper li:hover>a.dropdown-toggle:after,
+    #globalHeaderNavigationWrapper li:focus>a.dropdown-toggle:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #fdb913;
+        position: absolute;
+        left: 0;
+        top: 15px;
+    }
+}
+
+
+/******** modal fullscreen dropdown menu ********/
+
+.modal-dialog {
+    pointer-events: all;
+}
+
+@media (max-width:991.999px) {
+    #globalHeaderNavigationWrapper li {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+#globalHeaderNavigation .modal-fullscreen {
+    background: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    border-top: 2px solid #fdb913;
+    inset: 20px auto auto 0px!important;
+}
+
+#globalHeaderNavigation .modal-fullscreen .row {
+    background: #f7f7f7;
+    min-height: 200px;
+    padding: 65px 15px;
+}
+
+#globalHeaderNavigation .modal-fullscreen .globalHeaderNavigationMainLinks ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#globalHeaderNavigation .modal-fullscreen .globalHeaderNavigationQuickLinks ul li {
+    list-style: none;
+}
+
+@media screen and (max-width:991.98px) {
+    #globalHeaderNavigation .modal-fullscreen {
+        border-top: none;
+        float: none;
+        height: auto;
+        overflow: auto;
+        padding: 30px 17px;
+        position: static;
+    }
+}
+
+
+/******** links in mega drop down menu ********/
+
+#globalHeaderNavigation .globalHeaderNavigationMainLinks {
+    padding: 0;
+}
+
+#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li {
+    list-style: none;
+    max-height: 30px;
+    padding: 0 0 48px 0;
+}
+
+#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a {
+    border-left: 3px solid #f7f7f7;
+    color: #333333;
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 60px 0 10px;
+    position: relative;
+}
+
+#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a:hover,
+#globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a:focus {
+    border-left: 3px solid #04a9c5;
+    text-decoration: none;
+}
+
+
+/******** Quicklinks in mega drop down menu ********/
+
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks {
+    padding: 0 0 0 60px;
+    border-left: 2px solid #04a9c5;
+}
+
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks ul {
+    padding-left: 0;
+}
+
+@media screen and (max-width:991.999px) {
+    #globalHeaderNavigation .globalHeaderNavigationQuickLinks {
+        border-left: none;
+        border-top: 2px solid #04a9c5;
+        padding: 30px 13px 0;
+    }
+}
+
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks h5,
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks span {
+    color: #aa0000;
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks li a {
+    display: block;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks li a:hover,
+#globalHeaderNavigation .globalHeaderNavigationQuickLinks li a:focus {
+    color: #aa0000;
+}
+
+@media (max-width:991.98px) {
+    #globalHeaderNavigation .modal-fullscreen .globalHeaderNavigationQuickLinks li a {
+        padding: 10px 5px 10px 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #globalHeader {
+        margin-bottom: 0;
+        position: relative;
+    }
+    #globalHeader .navbar-toggle {
+        display: block;
+        right: 0;
+        padding: 10px 10px;
+    }
+    #globalHeader button .glyphicon {
+        color: #aa0000;
+        display: inline-block;
+        float: right;
+        font-size: 18px;
+        width: initial;
+    }
+    #globalHeader button .glyphicon:before {
+        content: '\f0c9';
+        font-family: 'fontawesome';
+    }
+    /* #globalHeader .navbar-collapse.collapse {
+        display: none!important;
+    } */
+    #globalHeader .collapse.in {
+        display: block !important;
+    }
+    /* #globalHeader #globalHeaderBottomInner {
+        display: none!important;
+    } */
+    .visible-sm-inline {
+        display: inline !important;
+    }
+}
+
+
+
+
+
+/***
 *   footer
 *   
 *
